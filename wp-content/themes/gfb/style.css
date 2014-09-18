@@ -1,0 +1,165 @@
+/*
+Theme Name: Good for Bellevue
+Theme URI: 
+Template: goodforbelparent
+Author: Edge Multimedia
+Version: 1.1.3
+*/
+
+@import url('../goodforbelparent/style.css');
+
+/* --- STRUCTURE --- */
+.style-1 .wrap-header {
+	background: #205b73, url('img/grain.png');
+	background: url('img/grain.png'), -moz-linear-gradient(top, #205b73 0%, #205b73 69%, #444444 69%, #444444 100%);
+	background: url('img/grain.png'), -webkit-gradient(linear, left top, left bottom, color-stop(0%,#205b73), color-stop(69%,#205b73), color-stop(69%,#444444), color-stop(100%,#444444));
+	background: url('img/grain.png'), -webkit-linear-gradient(top, #205b73 0%,#205b73 69%,#444444 69%,#444444 100%);
+	background: url('img/grain.png'), -o-linear-gradient(top, #205b73 0%,#205b73 69%,#444444 69%,#444444 100%);
+	background: url('img/grain.png'), -ms-linear-gradient(top, #205b73 0%,#205b73 69%,#444444 69%,#444444 100%);
+	background: url('img/grain.png'), linear-gradient(to bottom, #205b73 0%,#205b73 69%,#444444 69%,#444444 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#205b73', endColorstr='#444444',GradientType=0 );
+}
+
+
+/* --- STYLES --- */
+a, a > * { color: #205b73; }
+.style-1 a:hover, .style-1 a > *:hover { color: #1e6a89; }
+
+.style-1 .button.gray, .style-1 .wpcf7-submit, .style-1 .form-submit #submit { color: #205b73; }
+.style-1 .button.gray:hover, .style-1 .wpcf7-submit:hover, .style-1 .form-submit #submit:hover { background-color: #205b73; }
+
+h1 {font-size: 36px;}
+h2 { font-size: 28px;}
+h3 { font-size: 20px;}
+h4 { font-size: 18px;}
+h5 { font-size: 16px;}
+h6 { font-size: 14px;}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 15px;
+    color: #606163;
+    font-weight: 400;
+    line-height: 1.25;
+	text-transform:uppercase;
+}
+
+h6 {line-height: 1.5em;}
+
+
+/* --- HEADER --- */
+#logo { margin-left: 19px !important; }
+
+
+/* --- NAVIGATION --- */
+.style-1 .navigation > ul > li > a { color: #205b73; }
+.style-1 .navigation > ul > li:hover > a, .style-1 .navigation ul > li.current-menu-item > a, .style-1 .navigation ul > li.current-menu-parent > a, .style-1 .navigation ul > li.current-post-paretn > a { color: #fff; }
+.style-1 a.donate { background-color: #208C8C; }
+.style-1 a.donate:hover { background-color: #1e6a89; color: #fff; }
+.style-1 .navigation > ul > li:hover > a { background-color: #205b73 !important; }
+.style-1 .navigation > ul > li.current-menu-item > a, .style-1 .navigation > ul > li.current-menu-parent > a, .style-1 .wp-pagenavi .current { background-color: #1e6a89 !important; }
+
+
+/* --- HOME --- */
+.style-1 ul.block-with-icons li:hover { background-color: #205b73; }
+.style-1 ul.block-with-icons h5 { color: #205b73; }
+
+
+/* --- POSTS --- */
+.post-meta > .post-tags,
+.post-meta > .post-comments
+{ display: none; }
+
+.single-img { /* --- replaces parent theme .single-image which adds fancybox --- */
+	position: relative;
+	display: block;
+	margin-bottom: 25px;
+	cursor: pointer;
+	overflow: hidden;
+	text-align: center;
+}
+
+
+/* --- GALLERIES --- */
+.fg-panel > hr.fg-line { display: none; }
+
+
+/* --- SOCIAL BUTTONS --- */
+.fb_share {
+	height: 26px;
+	margin-right: 10px;
+	padding: 0 1em;
+	display: inline-block;
+	line-height: 26px;
+	font-weight: bold;
+	border: 1px solid #8a9cc2;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	vertical-align: top;
+	background: url('img/fb_bg.png') repeat-x 0 0;
+	color: #fff !important;
+}
+
+
+/* --- FOOTER --- */
+#footer .widget-title { font-size: 16px; }
+
+#footer ul.menu li { border-top: 1px solid #e0e1e3; border-bottom: none; }
+#footer ul.menu li:first-child { border-top: none; }
+.style-1 #footer ul.menu li a { color: #205b73; }
+#footer ul.menu li:hover a { color: #444; }
+
+/*.tweet:hover a, .tweet:hover a > * { color: #444; }
+.tweet:after { background-image: url('img/birds.png'); }*/
+.widget_tp_widget_recent_tweets > .widget-title { padding-left: 20px; background: url('img/birds.png') no-repeat 0 3px;') }
+
+ul.copyright { margin-top: 0; }
+ul.copyright:after { height: 17px; background-image: url('img/circles.png'); }
+
+
+/* --- MEDIA --- */
+@media only screen and (max-width: 767px) {
+
+#logo { margin-left: 30px !important; }
+
+}
+
+
+@media only screen and (max-width: 479px) {
+
+a.donate {
+	width: 30%;
+	line-height: 30px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+}
+
+/* --- HI-RES --- */
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+only screen and (-moz-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-device-pixel-ratio: 1.5) {
+
+#logo {
+	width: 224px;
+	height: 38px;
+	margin: 0 auto 40px;
+	padding-left: 224px;
+	overflow: hidden;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-image: url('img/mhbel_logo_2x.png');
+	background-size: 224px 38px;
+	background-repeat: no-repeat;
+}
+
+}
